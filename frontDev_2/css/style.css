@@ -307,7 +307,6 @@ a {
     color: #151515;
     display: flex;
     justify-content: space-between;
-    width: 90vw;
     padding: 6.875rem 6.75rem;
 }
 
@@ -322,6 +321,15 @@ a {
 
 .contact .contact-section:last-child {
    flex: 1 11.25rem; 
+}
+
+@media screen and (max-width: 1580px) {
+    .contact.wrapper {
+        padding: 6.875rem 1rem;
+    }
+    .contact .contact-section:last-child {
+        flex: 1 20rem;
+    }
 }
 
 .contact .contact-section:last-child h3 {
