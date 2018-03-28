@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* SETTINGS */
 
 * {
@@ -375,3 +376,382 @@ a {
     font-style: italic;
 }
 
+=======
+/* SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.wrapper {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.page-header {
+   position: absolute;
+    top: 5.41rem;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.page-header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4.6rem;
+    border-bottom: 1px solid rgba(255,255,255, .25);
+}
+
+.page-header .page-logo {
+    flex: 2; 
+}
+
+.page-header .page-logo .logo {
+    display: inline-block;
+    border: 3px solid #ffffff;
+    border-radius: 50%; 
+    width: 35px;
+    height: 35px;
+}
+
+.page-header .page-nav {
+    flex: 1;
+}
+
+.page-header .page-nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style: none;
+}
+
+.page-nav ul a {
+    text-transform: uppercase;
+    margin: 0 1rem;
+    position: relative;
+}
+
+.page-nav ul a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #da7074;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.page-nav ul a:hover::after{
+    width: 80%;
+}
+
+.page-header .page-search {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.search label {
+    font-size: 1.4rem;
+    font-weight: 400;
+    position: relative;
+}
+
+.search .input-search {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0.75rem 0;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 0;
+    height: 2.75rem;
+    transition: all 0.3s ease;   
+}
+
+.search label:hover .input-search {
+    border-bottom: 1px solid #ffffff;
+    width: 200px;
+    color: #ffffff;
+    padding-right: 3rem;
+}
+
+.btn-menu {
+    margin-top: 3px;
+    width: 34px;
+    height: 19px;
+    border: none;
+    background: none;
+    position: relative;
+    display: inline-block;
+    margin-left: 2.187rem;
+}
+  
+.btn-menu:before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+}
+  
+.btn-menu::after {
+    content: "";
+    width: 90%;
+    position: absolute;
+    right: 0;
+    border-top: 3px solid #ffffff;
+    top: calc(50% - 1px);
+    transition: all 0.3s ease;
+}
+  
+.btn-menu:hover::after {
+    width: 100%;
+}
+  
+.btn-menu:hover::before {
+    width: 80%;
+}
+
+/* MAIN - article */
+
+.main-section {
+    background: url("../img/bg.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.main-desc {
+    padding-top: 25.6rem;
+    padding-bottom: 26.87rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.main-desc h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 8.75rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-desc p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.7;
+    text-align: center;
+    padding: 0.45rem 0;
+    margin-bottom: 5.6rem;
+}
+
+.main-desc .btn-main {
+    border: none;
+    border-radius: 25px;
+    background: #da7074;
+    color: #ffffff;
+    width: 10.18rem;
+    height: 2.87rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.main-desc .btn-main::before {
+    content: "";
+    width: 300%;
+    border-bottom: 1px solid #da7074;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.main-desc .btn-main:hover::before {
+    width: 200%;
+    left: -50%;
+}
+
+.main-desc .btn-main::after {
+    content: "";
+    width: 11.875rem;
+    border-bottom: 1px solid #da7074;
+    position: absolute;
+    top: 205px;
+    left: -8%;
+    z-index: 0;
+    transform: rotate(90deg);
+    -webkit-box-shadow: 20px -5px 0px 0px rgba(218, 112, 116, 1);
+    -moz-box-shadow: 20px -5px 0px 0px rgba(218, 112, 116, 1);
+    box-shadow: 20px -5px 0px 0px rgba(218, 112, 116, 1);
+    opacity: 1;
+}
+
+
+.main-desc .btn-play {
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background: url("../img/play.png") no-repeat;
+    background-position: 60% 50%;
+    width: 5.125rem;
+    height: 5.125rem;
+    bottom: 2.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main-desc .btn-play:hover {
+    border-radius: 25%;
+}
+
+/* MAIN - gallery */
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery-section {
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.gallery-section img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery-section .gallery-desc {
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.gallery-section .gallery-desc h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.667;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.gallery-section .gallery-desc p {
+    font-family: Georgia;
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.667;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* FOOTER */
+
+.contact.wrapper {
+    color: #151515;
+    display: flex;
+    justify-content: space-between;
+    padding: 6.875rem 6.75rem;
+}
+
+.contact .contact-section {
+    flex: 1 auto;
+}
+
+.contact .contact-section h3 {
+    line-height: 1.857;
+    margin-bottom: 2.2rem;
+}
+
+.contact .contact-section:last-child {
+   flex: 1 11.25rem; 
+}
+
+@media screen and (max-width: 1580px) {
+    .contact.wrapper {
+        padding: 6.875rem 1rem;
+    }
+    .contact .contact-section:last-child {
+        flex: 1 20rem;
+    }
+}
+
+.contact .contact-section:last-child h3 {
+    margin-bottom: 1.5rem;
+}
+
+.contact .contact-section ul {
+    list-style: none;
+}
+
+.contact .contact-section li {
+    margin-bottom: 0.5rem;
+}
+
+.contact .contact-section a {
+    font-family: Georgia;
+    color:  rgba(86, 86, 86, 0.8);
+    font-size: 0.875rem;
+    font-style: italic;
+    line-height: 1.857;
+}
+
+.contact .contact-section a:hover {
+    color:  rgba(86, 86, 86, 1);
+}
+
+.contact .contact-section p {
+    font-family: Georgia;
+    color:  rgba(86, 86, 86, 0.8);
+    font-size: 0.875rem;
+    font-style: italic;
+    line-height: 2.5;
+}
+
+.copyright {
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    background: #000000;
+    font-family: Georgia;
+    color:  rgba(255, 255, 255, 0.25);
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+>>>>>>> 8957d5ffaadf19fd81ef7753094c3441a46560f8
