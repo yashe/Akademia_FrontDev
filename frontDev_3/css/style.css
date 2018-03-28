@@ -218,18 +218,18 @@ a {
 
 .main-desc .btn-main::before {
     content: "";
-    width: 160%;
+    width: 180%;
     border-bottom: 1px solid #da7074;
     position: absolute;
     top: 50%;
-    left: -32%;
+    left: -41%;
     z-index: -1;
     transition: all 0.3s ease;
 }
 
 .main-desc .btn-main:hover::before {
-    width: 120%;
-    left: -50%;
+    width: 160%;
+    left: -30%;
 }
 
 .main-desc .btn-main::after {
@@ -241,8 +241,6 @@ a {
     left: 22%;
     z-index: 0;
     transform: rotate(90deg);
-    -webkit-box-shadow: 20px -5px 0px 0px rgba(218, 112, 116, 1);
-    -moz-box-shadow: 20px -5px 0px 0px rgba(218, 112, 116, 1);
     box-shadow: 20px -5px 0px 0px rgba(218, 112, 116, 1);
     opacity: 1;
 }
